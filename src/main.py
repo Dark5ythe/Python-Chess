@@ -14,9 +14,14 @@ class main:
 
 
 
-    def mainloop(self):   # this is the most imp part of the programe which runs the file and updates it 
+    def mainloop(self):   # this is the most imp part of the programe which runs the file and updates it
+
+        screen = self.screen 
+        game = self.game 
+        
+         
         while True:
-            self.game.show_bg(self.screen)
+            self.game.show_bg(screen)
 
             for event in pygame.event.get():  # evrry mouse click is stored as an event 
                 if event.type == pygame.QUIT: # when X is pressed the game exits 
@@ -29,5 +34,5 @@ class main:
             pygame.display.update()
 main = main()
 main.mainloop()
-print("Pygame version:", pygame.__version__)
+
 
