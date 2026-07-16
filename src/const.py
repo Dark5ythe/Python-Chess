@@ -1,7 +1,7 @@
 #  Screen dimentions 
 
-Width = 400
-Height = 400
+Width = 750
+Height = 750
 
 # board dimentions 
 

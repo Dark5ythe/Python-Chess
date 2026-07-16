@@ -3,6 +3,7 @@ import sys
 
 from const import *
 from game import Game
+from piece import *
 
 class main:
 
@@ -21,7 +22,8 @@ class main:
         
          
         while True:
-            self.game.show_bg(screen)
+            game.show_bg(screen)
+            game.show_pieces(screen)
 
             for event in pygame.event.get():  # evrry mouse click is stored as an event 
                 if event.type == pygame.QUIT: # when X is pressed the game exits 
